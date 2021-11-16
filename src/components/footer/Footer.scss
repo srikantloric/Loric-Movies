@@ -1,0 +1,34 @@
+$color-primary: #fb6502;
+$color-secondary: #fff;
+.footer_container {
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  padding: 10px;
+
+  span {
+    background-color: black;
+
+    a {
+      background-color: black;
+    }
+
+    & .heart_icon {
+      background-color: black;
+      color: $color-primary;
+      height: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    text-align: center;
+  }
+}

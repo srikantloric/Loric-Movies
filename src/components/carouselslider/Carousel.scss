@@ -1,0 +1,116 @@
+$color-primary: #fb6502;
+$color-secondary: #fff;
+.slider_container {
+  width: 100%;
+
+  & .slider_home {
+    display: flex;
+    position: relative;
+    height: 400px;
+    img {
+      object-fit: cover;
+      height: 400px;
+      background-color: black;
+      border-radius: 0.5rem;
+    }
+
+    & .slider_btn {
+      z-index: 999;
+      width: 250px;
+      height: 50px;
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      color: $color-secondary;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+
+      & .download_icon {
+        opacity: 0.8;
+      }
+
+      &:hover {
+        color: $color-primary;
+        background-color: #fff;
+        border: 3px solid $color-primary;
+        opacity: 1;
+
+        & .download_icon {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  background-color: transparent;
+
+  button {
+    &.active {
+      background-color: $color-primary;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider_container {
+    width: 100%;
+
+    & .slider_home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      height: 250px;
+      border-radius: 0px;
+      img {
+        object-fit: cover;
+        height: 250px;
+        background-color: black;
+      }
+
+      & .slider_btn {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 150px;
+        height: 30px;
+        color: $color-secondary;
+        padding: 2px 5px 2px 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        border: 1px solid rgb(150, 150, 150);
+
+        opacity: 0.8;
+        & .download_icon {
+          height: 15px;
+          opacity: 0.8;
+        }
+
+        &:hover {
+          color: $color-primary;
+          background-color: rgb(0, 0, 0);
+          border: 0px;
+          opacity: 1;
+
+          & .download_icon {
+            background-color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}

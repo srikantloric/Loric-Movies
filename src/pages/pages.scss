@@ -1,0 +1,328 @@
+$color-primary: #fb6502;
+$color-secondary: #fff;
+
+.page {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+  margin-top: 10px;
+  min-height: 100vh;
+
+  & .section_text {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: gray;
+    border-bottom: 1px solid rgb(82, 81, 81);
+  }
+}
+
+.slider_container {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.filter_items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  color: white;
+  background-color: #0f0f0f;
+  width: 400px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    border: 0px;
+    margin-left: 2px;
+    margin-right: 10px;
+    background-color: #0f0f0f;
+    font-size: larger;
+  }
+
+  & .filter_searchicon {
+    background-color: #0f0f0f;
+    border: 0px;
+    color: #525252;
+    opacity: 0.54;
+    margin-left: 10px;
+    font-size: 1.9rem;
+  }
+}
+
+.select_catagory {
+  display: flex;
+  color: #adacac;
+  align-items: center;
+  select {
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    color: #adacac;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto", sans-serif;
+    font-style: italic;
+  }
+}
+.select_language {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  select {
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    color: #adacac;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto", sans-serif;
+    font-style: italic;
+  }
+}
+.select_year {
+  display: flex;
+  align-items: center;
+
+  select {
+    color: #adacac;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto", sans-serif;
+    font-style: italic;
+  }
+}
+.age_group {
+  display: flex;
+  align-items: center;
+
+  select {
+    color: #adacac;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto", sans-serif;
+    font-style: italic;
+  }
+}
+
+.find_btn {
+  border: 0px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid $color-primary;
+  width: 150px;
+  font-size: 1.3rem;
+  color: $color-primary;
+  font-family: "roboto", sans-serif;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: 1px solid #fff;
+
+    transition: all 0.2s ease-in;
+  }
+}
+
+@media only screen and(max-width:600px) {
+  .page {
+    & .section_text {
+      font-family: "roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  .filter_items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .search {
+    display: flex;
+    color: white;
+    background-color: #0f0f0f;
+
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 8px;
+      color: white;
+      border: 0px;
+      margin-left: 2px;
+      margin-right: 10px;
+      background-color: #0f0f0f;
+      font-size: larger;
+
+      &:focus {
+        outline: none;
+        border: 0px;
+        & .search {
+          border: 1px solid green;
+        }
+      }
+    }
+
+    & .filter_searchicon {
+      background-color: #0f0f0f;
+      border: 0px;
+      color: #525252;
+      opacity: 0.54;
+      margin-left: 10px;
+      font-size: 1.9rem;
+    }
+  }
+
+  .select_catagory {
+    display: flex;
+    color: #adacac;
+    align-items: center;
+    padding: 5px;
+    select {
+      width: fit-content;
+      height: 30px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: #0f0f0f;
+      color: #adacac;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: "roboto", sans-serif;
+      font-style: italic;
+
+      &:focus {
+        outline: none;
+        border: 0px;
+      }
+    }
+  }
+  .select_language {
+    display: flex;
+    color: #fff;
+    margin: 5px;
+    align-items: center;
+    padding: 5px;
+    select {
+      width: fit-content;
+      height: 30px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: #0f0f0f;
+      color: #adacac;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: "roboto", sans-serif;
+      font-style: italic;
+    }
+  }
+  .select_year {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    padding: 5px;
+
+    select {
+      color: #adacac;
+      width: fit-content;
+      height: 30px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: #0f0f0f;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: "roboto", sans-serif;
+      font-style: italic;
+    }
+  }
+  .age_group {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+
+    select {
+      color: #adacac;
+      width: fit-content;
+      height: 30px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: #0f0f0f;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: "roboto", sans-serif;
+      font-style: italic;
+    }
+  }
+
+  .find_btn {
+    border: 0px;
+
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid $color-primary;
+    width: 150px;
+    font-size: 1.3rem;
+    color: $color-primary;
+    font-family: "roboto", sans-serif;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-secondary;
+      border: 1px solid #fff;
+
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+.movie_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}

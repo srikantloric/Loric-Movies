@@ -1,0 +1,16 @@
+.movie_container {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie_container {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

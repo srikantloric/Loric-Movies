@@ -1,0 +1,56 @@
+$color-primary: #1e1e1e;
+$color-primary2: #fb6502;
+$color-secondary: #fff;
+.home_page {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.goto_saved {
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  border-radius: 20px;
+  padding: 8px;
+  background-color: $color-primary2;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: $color-primary2;
+    border: 2px solid $color-primary2;
+    & .saved_text {
+      background-color: $color-secondary;
+    }
+    & .time_icon {
+      background-color: $color-secondary;
+    }
+  }
+}
+.saved_text {
+  background-color: $color-primary2;
+}
+.time_icon {
+  background-color: $color-primary2;
+}
+
+.movie_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .saved_text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home_page {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
